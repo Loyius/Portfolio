@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+ 
+    background-color: #252424;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Header content*/
+
+a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+header{
+    background-color: #1c1a1a;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+
+header h1, a{
+    color: #ffea00;
+    transition: 0.2s ease-in-out;
+}
+
+header h1:hover, a:hover{
+    color: #ddd;
+}
+
+/*Footer content*/
+
+footer{
+    color: #d2d2d2;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span{
+    font-size: 0.8em;
+    font-weight: 250;
+}
+
+/*Main content*/
+
+main{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content h2{
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+main .main-content .text{
+    margin-bottom: 8%;
+}
+main .main-content .text p{
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 280;
+    line-height: 1.6;
+}
+
+/*CARDS content*/
+
+main .techs .card-container{
+display: flex;
+align-items: center;
+justify-content: left;
+padding: 10px;
+}
+
+main .techs .card-container .card{
+width: 120px;
+height: 120px;
+padding: 10px;
+background-color: #eaeaea;
+border-radius: 10px;
+margin-right: 0.9em;
+margin-left: 0.9em;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+main .techs .card-container .card img{
+    width: 80%;
+}
+
+main .techs .card-container .card:hover{
+    box-shadow: 0px 0px 8px #ffea00;
+    transition: 0.1s ease-in-out;
+}
+
+/*Figure content*/
+main figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+main figure img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-bottom: 6%;
+    border: 1px #ffea00 solid;
+    transition: 0.1 ease-in-out;
+}
+
+main figure img:hover{
+    box-shadow: 0px 0px 8px #ffea00;
+}
+
+/*Responsive content*/
+
+@media (max-width: 1200px){
+    main{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+
+    main .main-content .text, .techs{
+        align-items: center;
+   }
+
+   main .main-content .text p{
+    width: 100%;
+    font-size: 0.9em;
+   }
+
+   main .techs .card-container .main-content .texts p{
+    margin-top: 32px;
+   }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    header nav{
+        margin-top: 24px;
+    } 
+    header nav a{
+        font-size: 1em;
+    }
+    main .techs .card-container .card{
+        width: 60px;
+        height: 60px;
+    }
+
+    main .main-content .text h2, .main-content .techs h2{
+        font-size: 1.8em;
+    }
+
+    main figure img{
+        width: 250px;
+        height: 250px;
+    }
+}
